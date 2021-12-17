@@ -1,2 +1,121 @@
 @use "./base" as *;
 @use "./mixins" as *;
+
+.insure {
+  &__header {
+  }
+
+  &__menu-wrapper {
+  }
+
+  &__icons-wrapper {
+  }
+
+  &__logo {
+    &--footer {
+    }
+  }
+
+  &__hamburger-button {
+  }
+
+  &__hamburger {
+  }
+
+  &__nav {
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+  }
+
+  &__list-link {
+  }
+
+  &__button {
+  }
+
+  &__plans {
+  }
+
+  // main
+
+  &__main {
+  }
+
+  &__human {
+  }
+
+  &__family {
+  }
+
+  &__title {
+    &--secondary {
+    }
+
+    &--tertiary {
+    }
+  }
+
+  &__description {
+  }
+
+  // section two
+
+  &__differentiation {
+  }
+
+  &__diff-box {
+  }
+
+  &__diff-card {
+  }
+
+  &__picture {
+  }
+
+  &__name {
+  }
+
+  &__info {
+  }
+
+  &__poster {
+  }
+
+  // footer social
+
+  &__social-block {
+  }
+
+  &__social-list {
+  }
+
+  &__social-item {
+  }
+
+  &__social-link {
+  }
+
+  // footer menu
+
+  &__menu {
+  }
+
+  &__list {
+  }
+
+  &__list-item {
+  }
+
+  &__list-link {
+  }
+
+  &__sublist {
+  }
+
+  &__sublist-link {
+  }
+}
