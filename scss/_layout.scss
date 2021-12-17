@@ -1,2 +1,7 @@
+@use "./base" as *;
+
 .insure__container {
+  width: 88%;
+  margin: 0 auto;
+  padding: 10rem 0;
 }

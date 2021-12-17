@@ -13,6 +13,202 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "DM Serif Display", serif;
+  background-color: #fafafa;
+}
+
+.insure__container {
+  width: 88%;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+.insure {
+  width: 100%;
+}
+.insure__header {
+  background-color: #fafafa;
+}
+.insure__menu-wrapper {
+  width: 88%;
+  margin: 0 auto;
+}
+.insure__icons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.insure__hamburger-button {
+  background: transparent;
+  border: none;
+}
+.insure__nav {
+  display: none;
+}
+.insure__button {
+  background: transparent;
+  padding: 1rem 3rem;
+  border: 0.1rem solid white;
+}
+.insure__button--poster {
+  margin-top: 3rem;
+}
+.insure__plans:link, .insure__plans:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+.insure__human {
+  position: relative;
+  background-color: #2d2640;
+  color: #fafafa;
+  text-align: center;
+}
+.insure__human::before {
+  position: absolute;
+  content: url("../images/bg-pattern-intro-left-mobile.svg");
+  left: 0;
+  top: 0;
+}
+.insure__human::after {
+  position: absolute;
+  content: url("../images/bg-pattern-intro-right-mobile.svg");
+  right: 0;
+  bottom: -18rem;
+}
+.insure__family {
+  width: 100%;
+}
+.insure__title {
+  position: relative;
+  font-size: 4.5rem;
+}
+.insure__title--secondary::before {
+  content: "";
+  position: absolute;
+  background-color: #837d87;
+  width: 15rem;
+  height: 0.12rem;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.insure__title--tertiary {
+  font-size: 3.8rem;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+.insure__description {
+  font-family: "Karla", sans-serif;
+  font-size: 1.65rem;
+  line-height: 1.6;
+  margin: 1rem auto 3rem auto;
+  max-width: 55rem;
+  font-family: "Karla", sans-serif;
+}
+.insure__differentiation {
+  text-align: center;
+  padding: 15rem 0;
+}
+.insure__diff-box {
+  margin: 10rem auto;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.insure__name {
+  font-size: 2.5rem;
+  margin: 3rem 0 1rem 0;
+}
+.insure__info {
+  color: #837d87;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 2;
+  font-size: 1.47rem;
+  max-width: 37rem;
+}
+.insure__poster {
+  color: #fafafa;
+  background-color: #2d2640;
+  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 88%;
+  margin: 0 auto;
+  padding: 5rem 4rem;
+}
+.insure__footer {
+  background-color: rgba(131, 125, 135, 0.05);
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 39rem;
+  background-position: 0 0;
+  padding: 10rem 0 5rem 0;
+}
+.insure__social-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 8rem;
+}
+.insure__social-block::before {
+  content: "";
+  position: absolute;
+  width: 88%;
+  background-color: #837d87;
+  height: 0.12rem;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.insure__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+.insure__menu {
+  width: 88%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-family: "Karla", sans-serif;
+}
+.insure__list {
+  margin-bottom: 3rem;
+}
+.insure__list-item {
+  list-style: none;
+}
+.insure__list-link:link, .insure__list-link:visited {
+  color: #837d87;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+.insure__sublist {
+  list-style: none;
+  margin-top: 3rem;
+  font-weight: 700;
+}
+.insure__sublist-item {
+  margin-bottom: 1.5rem;
+}
+.insure__sublist-link:link, .insure__sublist-link:visited {
+  color: #2b272f;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
