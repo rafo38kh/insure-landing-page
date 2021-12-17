@@ -1,0 +1,26 @@
+$color-darkViolet: hsl(256, 26%, 20%);
+$color-grayishBlue: hsl(216, 30%, 68%);
+// ### Neutral
+$color-veryDarkViolet: hsl(270, 9%, 17%);
+$color-darkGrayishViolet: hsl(273, 4%, 51%);
+$color-veryLightGray: hsl(0, 0%, 98%);
+
+$font-primary: "DM Serif Display", serif; // - Weights: 400
+$font-secondary: "Karla", sans-serif; //- Weights: 400, 700
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
