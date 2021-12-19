@@ -4,4 +4,14 @@
   width: 88%;
   margin: 0 auto;
   padding: 10rem 0;
+  @media (min-width: 810px) {
+    grid-column: 1/2;
+  }
+  @media (min-width: 1140px) {
+    text-align: left;
+    width: unset;
+  }
+
+  &--human {
+  }
 }

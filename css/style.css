@@ -22,7 +22,17 @@ body {
   margin: 0 auto;
   padding: 10rem 0;
 }
-
+@media (min-width: 810px) {
+  .insure__container {
+    grid-column: 1/2;
+  }
+}
+@media (min-width: 1140px) {
+  .insure__container {
+    text-align: left;
+    width: unset;
+  }
+}
 .insure {
   width: 100%;
 }
@@ -32,6 +42,15 @@ body {
 .insure__menu-wrapper {
   width: 88%;
   margin: 0 auto;
+}
+@media (min-width: 1140px) {
+  .insure__menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    max-width: 115rem;
+  }
 }
 .insure__icons-wrapper {
   display: flex;
@@ -43,29 +62,98 @@ body {
   background: transparent;
   border: none;
 }
+@media (min-width: 1140px) {
+  .insure__hamburger-button {
+    display: none;
+  }
+}
 .insure__nav {
   display: none;
+  position: absolute;
+  background-color: #2b272f;
+  width: 100%;
+  left: 0;
+  top: 7.5rem;
+  z-index: 1;
+  text-align: center;
+  min-height: 100vh;
+  background-image: url(../images/bg-pattern-mobile-nav.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
+@media (min-width: 1140px) {
+  .insure__nav {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 .insure__button {
   background: transparent;
-  padding: 1rem 3rem;
-  border: 0.1rem solid white;
+  padding: 1rem 0;
+  border: 0.15rem solid #fafafa;
+  width: 15rem;
+}
+.insure__button--menu {
+  padding: 1.5rem 9.5rem;
+}
+@media (min-width: 810px) {
+  .insure__button--menu {
+    background: transparent;
+    padding: 1rem 0;
+    border: 0.15rem solid #fafafa;
+    width: 15rem;
+    padding: 1.5rem 9.5rem;
+  }
+}
+@media (min-width: 1140px) {
+  .insure__button--menu {
+    background: transparent;
+    padding: 1rem 0;
+    border: 0.15rem solid #2b272f;
+    width: 15rem;
+  }
 }
 .insure__button--poster {
   margin-top: 3rem;
 }
+@media (min-width: 1140px) {
+  .insure__button--poster {
+    margin-top: 0;
+  }
+}
 .insure__plans:link, .insure__plans:visited {
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: #fafafa;
   letter-spacing: 0.2rem;
   font-size: 1.2rem;
+  font-weight: 700;
+}
+.insure__plans--menu:link, .insure__plans--menu:visited {
+  color: #fafafa;
+  font-size: 1.8rem;
+}
+@media (min-width: 1140px) {
+  .insure__plans--menu:link, .insure__plans--menu:visited {
+    color: #2b272f;
+    font-size: 1.2rem;
+  }
 }
 .insure__human {
   position: relative;
   background-color: #2d2640;
   color: #fafafa;
   text-align: center;
+}
+@media (min-width: 810px) {
+  .insure__human {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
 }
 .insure__human::before {
   position: absolute;
@@ -79,12 +167,49 @@ body {
   right: 0;
   bottom: -18rem;
 }
+@media (min-width: 1140px) {
+  .insure__human::before {
+    content: url("../images/bg-pattern-intro-left-desktop.svg");
+    top: 35rem;
+    z-index: 2;
+  }
+  .insure__human::after {
+    content: url("../images/bg-pattern-intro-right-desktop.svg");
+    bottom: unset;
+    top: 0;
+    right: 0;
+  }
+}
 .insure__family {
   width: 100%;
+}
+@media (min-width: 810px) {
+  .insure__family {
+    position: absolute;
+    width: 30rem;
+    top: 20%;
+    right: 6%;
+    transform: translateY(-10%);
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 1140px) {
+  .insure__family {
+    width: 50rem;
+    top: 30%;
+    right: 25%;
+  }
 }
 .insure__title {
   position: relative;
   font-size: 4.5rem;
+}
+@media (min-width: 1140px) {
+  .insure__title {
+    font-size: 7rem;
+    max-width: 55rem;
+    line-height: 6rem;
+  }
 }
 .insure__title--secondary::before {
   content: "";
@@ -96,10 +221,31 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+@media (min-width: 1140px) {
+  .insure__title--secondary {
+    line-height: 12rem;
+    width: 88%;
+    margin: 0 auto;
+    text-align: left;
+    max-width: unset;
+  }
+  .insure__title--secondary::before {
+    left: unset;
+    transform: unset;
+  }
+}
 .insure__title--tertiary {
   font-size: 3.8rem;
   max-width: 44rem;
   margin: 0 auto;
+}
+@media (min-width: 1140px) {
+  .insure__title--tertiary {
+    font-size: 5rem;
+    max-width: 65rem;
+    text-align: left;
+    margin: 0;
+  }
 }
 .insure__description {
   font-family: "Karla", sans-serif;
@@ -109,9 +255,22 @@ body {
   max-width: 55rem;
   font-family: "Karla", sans-serif;
 }
+@media (min-width: 1140px) {
+  .insure__description {
+    margin: 3rem 0;
+    max-width: 58rem;
+  }
+}
 .insure__differentiation {
   text-align: center;
+  width: 88%;
+  margin: 0 auto;
   padding: 15rem 0;
+}
+@media (min-width: 1140px) {
+  .insure__differentiation {
+    padding: 35rem 0 15rem 0;
+  }
 }
 .insure__diff-box {
   margin: 10rem auto;
@@ -121,6 +280,16 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5rem;
+}
+@media (min-width: 1140px) {
+  .insure__diff-box {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1140px) {
+  .insure__diff-card {
+    text-align: left;
+  }
 }
 .insure__name {
   font-size: 2.5rem;
@@ -132,7 +301,6 @@ body {
   letter-spacing: 0.1rem;
   line-height: 2;
   font-size: 1.47rem;
-  max-width: 37rem;
 }
 .insure__poster {
   color: #fafafa;
@@ -144,6 +312,14 @@ body {
   margin: 0 auto;
   padding: 5rem 4rem;
 }
+@media (min-width: 1140px) {
+  .insure__poster {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem;
+  }
+}
 .insure__footer {
   background-color: rgba(131, 125, 135, 0.05);
   background-image: url("../images/bg-pattern-footer-mobile.svg");
@@ -151,6 +327,7 @@ body {
   background-size: 39rem;
   background-position: 0 0;
   padding: 10rem 0 5rem 0;
+  width: 100%;
 }
 .insure__social-block {
   position: relative;
@@ -164,12 +341,21 @@ body {
 .insure__social-block::before {
   content: "";
   position: absolute;
-  width: 88%;
+  width: 100%;
   background-color: #837d87;
   height: 0.12rem;
   top: 150%;
   left: 50%;
   transform: translateX(-50%);
+}
+@media (min-width: 1140px) {
+  .insure__social-block {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 88%;
+    margin: 0 auto 8rem;
+    max-width: 110rem;
+  }
 }
 .insure__social-list {
   display: flex;
@@ -180,14 +366,40 @@ body {
 }
 .insure__menu {
   width: 88%;
+  max-width: 110rem;
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-family: "Karla", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+@media (min-width: 1140px) {
+  .insure__menu {
+    text-align: left;
+  }
 }
 .insure__list {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+.insure__list--header {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style: none;
+  font-family: "Karla", sans-serif;
+  margin: 5rem 0;
+}
+@media (min-width: 1140px) {
+  .insure__list--header {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    font-family: "Karla", sans-serif;
+    margin: 0;
+  }
 }
 .insure__list-item {
   list-style: none;
@@ -197,9 +409,27 @@ body {
   text-decoration: none;
   letter-spacing: 0.2rem;
 }
+.insure__list-link--header:link, .insure__list-link--header:visited {
+  color: #fafafa;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+@media (min-width: 1140px) {
+  .insure__list-link--header:link, .insure__list-link--header:visited {
+    color: #837d87;
+    font-size: 1.3rem;
+  }
+  .insure__list-link--header:hover:visited, .insure__list-link--header:hover:active {
+    color: #2b272f;
+  }
+}
 .insure__sublist {
   list-style: none;
-  margin-top: 3rem;
+  margin-top: 4rem;
   font-weight: 700;
 }
 .insure__sublist-item {

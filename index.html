@@ -42,35 +42,43 @@
           </button>
         </div>
         <nav class="insure__nav js-menu">
-          <ul class="insure__list">
-            <li class="insure__list-item">
-              <a href="#" class="insure__list-link">How we work</a>
+          <ul class="insure__list--header">
+            <li class="insure__list-item--header">
+              <a href="#" class="insure__list-link--header">How we work</a>
             </li>
 
-            <li class="insure__list-item">
-              <a href="#" class="insure__list-link">Blog</a>
+            <li class="insure__list-item--header">
+              <a href="#" class="insure__list-link--header">Blog</a>
             </li>
 
-            <li class="insure__list-item">
-              <a href="#" class="insure__list-link">Account</a>
+            <li class="insure__list-item--header">
+              <a href="#" class="insure__list-link--header">Account</a>
             </li>
-
-            <button class="insure__button insure__button--menu">
-              <a href="#" class="insure__plans">View plans</a>
-            </button>
           </ul>
+          <button class="insure__button insure__button--menu">
+            <a href="#" class="insure__plans insure__plans--menu">View plans</a>
+          </button>
         </nav>
       </div>
     </header>
 
     <main class="insure__main">
+
       <section class="insure__human">
-        <img
-          src="images/image-intro-mobile.jpg"
-          alt=""
-          class="insure__family"
-        />
-        <!-- <div class="insure__text-box"> -->
+        <div class="insure__container--human"></div>
+        <picture>
+          <source
+            srcset="images/image-intro-desktop.jpg"
+            media="(min-width: 810px)"
+          />
+          <img
+            src="images/image-intro-mobile.jpg"
+            alt="family"
+            class="insure__family"
+          />
+        </picture>
+
+
         <div class="insure__container">
           <h1 class="insure__title">Humanizing your insurance.</h1>
           <h2 class="insure__description">
@@ -82,7 +90,7 @@
             <a href="#" class="insure__plans">View plans</a>
           </button>
         </div>
-        <!-- </div> -->
+        </div>
       </section>
 
       <section class="insure__differentiation">

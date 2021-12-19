@@ -1,0 +1,8 @@
+@use "./base" as *;
+
+@mixin styleButton($colorTheme) {
+  background: transparent;
+  padding: 1rem 0;
+  border: 0.15rem solid $colorTheme;
+  width: 15rem;
+}
