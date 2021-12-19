@@ -26,7 +26,7 @@ This is a solution to the [Insure Landing Page Challenge on Frontend Mentor](htt
 ### Links
 
 - Solution URL: []()
-- Live Site URL: []()
+- Live Site URL: [https://rafo38kh.github.io/insure-landing-page/](https://rafo38kh.github.io/insure-landing-page/)
 
 ## My process
 
@@ -35,6 +35,7 @@ This is a solution to the [Insure Landing Page Challenge on Frontend Mentor](htt
 - Semantic HTML5 markup
 - SCSS custom properties
 - CSS Flexbox
+- CSS Grid
 - Vanilla JS
 - Mobile-first workflow
 
