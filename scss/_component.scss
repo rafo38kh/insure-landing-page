@@ -20,16 +20,17 @@
   }
 
   &__icons-wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
   }
 
-  &__logo {
-    &--footer {
-    }
-  }
+  // &__logo {
+  //   &--footer {
+  //   }
+  // }
 
   &__hamburger-button {
     background: transparent;
@@ -39,12 +40,11 @@
     }
   }
 
-  &__hamburger {
-  }
+  // &__hamburger {
+  // }
 
   &__nav {
-    display: none;
-    position: absolute;
+    position: fixed;
     background-color: $color-veryDarkViolet;
     width: 100%;
     left: 0;
@@ -56,6 +56,14 @@
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+
+    &.menu__active {
+      visibility: visible;
+      opacity: 1;
+    }
 
     @media (min-width: 1140px) {
       all: unset;
@@ -66,33 +74,37 @@
     }
   }
 
-  &__list {
-  }
-
-  &__list-item {
-  }
-
-  &__list-link {
-  }
-
   &__button {
     @include styleButton($color-veryLightGray);
+    transition: all 0.3s;
+
+    &:hover {
+      @include styleButton($color-veryDarkViolet);
+      background-color: $color-veryLightGray;
+      cursor: pointer;
+    }
 
     &--menu {
       padding: 1.5rem 9.5rem;
-
+      background: transparent;
+      padding: 1rem 0;
+      border: 0.15rem solid $color-veryLightGray;
+      width: 35rem;
       @media (min-width: 810px) {
-        @include styleButton($color-veryLightGray);
-        padding: 1.5rem 9.5rem;
       }
 
       @media (min-width: 1140px) {
         @include styleButton($color-veryDarkViolet);
       }
+
+      &:hover {
+        @include styleButton($color-veryLightGray);
+        background-color: $color-veryDarkViolet;
+      }
     }
 
-    &--human {
-    }
+    // &--human {
+    // }
 
     &--poster {
       margin-top: 3rem;
@@ -101,32 +113,6 @@
       }
     }
   }
-
-  &__plans {
-    &:link,
-    &:visited {
-      text-transform: uppercase;
-      text-decoration: none;
-      color: $color-veryLightGray;
-      letter-spacing: 0.2rem;
-      font-size: 1.2rem;
-      font-weight: 700;
-    }
-    &--menu {
-      &:link,
-      &:visited {
-        color: $color-veryLightGray;
-        font-size: 1.8rem;
-
-        @media (min-width: 1140px) {
-          color: $color-veryDarkViolet;
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
-
-  // main
 
   &__main {
   }
@@ -168,9 +154,6 @@
       }
     }
   }
-
-  // &__text-box {
-  // }
 
   &__family {
     width: 100%;
@@ -251,8 +234,6 @@
     }
   }
 
-  // section two
-
   &__differentiation {
     text-align: center;
     width: 88%;
@@ -266,7 +247,6 @@
   &__diff-box {
     margin: 10rem auto;
     width: 88%;
-    // margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,7 +277,6 @@
     letter-spacing: 0.1rem;
     line-height: 2;
     font-size: 1.47rem;
-    // max-width: 37rem;
   }
 
   &__poster {
@@ -316,8 +295,6 @@
       padding: 5rem 10rem;
     }
   }
-
-  // footer social
 
   &__footer {
     background-color: rgba($color-darkGrayishViolet, 0.05);
@@ -365,13 +342,20 @@
     list-style: none;
   }
 
-  &__social-item {
-  }
+  // &__social-item {
+  // }
 
-  &__social-link {
-  }
+  // &__social-link {
+  // }
 
-  // footer menu
+  &__social-icons {
+    fill: $color-darkGrayishViolet;
+    transition: all 0.3s;
+
+    &:hover {
+      fill: $color-veryDarkViolet;
+    }
+  }
 
   &__menu {
     width: 88%;
@@ -407,9 +391,6 @@
         margin: 0;
       }
     }
-    // @media (min-width: 1140px) {
-    //   margin: 0;
-    // }
   }
 
   &__list-item {
@@ -442,18 +423,12 @@
         &:visited {
           color: $color-darkGrayishViolet;
           font-size: 1.3rem;
-          // text-decoration: none;
-          // text-transform: uppercase;
-          // text-decoration: none;
-          // font-weight: 700;
-          // letter-spacing: 0.2rem;
+          transition: all 0.3s;
         }
-
+        &:active,
         &:hover {
-          &:visited,
-          &:active {
-            color: $color-veryDarkViolet;
-          }
+          color: $color-veryDarkViolet;
+          cursor: pointer;
         }
       }
     }
@@ -475,6 +450,12 @@
       color: $color-veryDarkViolet;
       text-decoration: none;
       letter-spacing: 0.2rem;
+    }
+
+    &:active,
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }

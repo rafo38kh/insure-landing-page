@@ -5,8 +5,8 @@ $color-veryDarkViolet: hsl(270, 9%, 17%);
 $color-darkGrayishViolet: hsl(273, 4%, 51%);
 $color-veryLightGray: hsl(0, 0%, 98%);
 
-$font-primary: "DM Serif Display", serif; // - Weights: 400
-$font-secondary: "Karla", sans-serif; //- Weights: 400, 700
+$font-primary: "DM Serif Display", serif;
+$font-secondary: "Karla", sans-serif;
 
 *,
 *::before,
@@ -25,4 +25,8 @@ body {
   font-size: 1.6rem;
   font-family: $font-primary;
   background-color: $color-veryLightGray;
+
+  &.body--is-fixed {
+    overflow: hidden;
+  }
 }
