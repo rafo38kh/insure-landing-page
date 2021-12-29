@@ -9,9 +9,11 @@ hamburger.addEventListener("click", () => {
     menu.classList.add("menu__active");
     close.src = "images/icon-close.svg";
     body.classList.add("body--is-fixed");
+    wrapper.style.position = "fixed";
   } else {
     close.src = "images/icon-hamburger.svg";
     menu.classList.remove("menu__active");
     body.classList.remove("body--is-fixed");
+    wrapper.style.position = "relative";
   }
 });

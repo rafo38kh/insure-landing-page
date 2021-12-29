@@ -42,6 +42,11 @@ body.body--is-fixed {
 }
 .insure__header {
   background-color: #fafafa;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 .insure__menu-wrapper {
   width: 88%;
@@ -73,7 +78,7 @@ body.body--is-fixed {
   }
 }
 .insure__nav {
-  position: fixed;
+  position: absolute;
   background-color: #2b272f;
   width: 100%;
   left: 0;
